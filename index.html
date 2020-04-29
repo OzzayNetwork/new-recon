@@ -21,6 +21,8 @@
 
         <!-- App styles -->
         <link rel="stylesheet" href="css/app.min.css">
+	        <link rel="stylesheet" href="css/dropify2.css">
+
     </head>
 
     <body data-ma-theme="green">
@@ -43,7 +45,7 @@
                 </div>
 
                 <div class="header__logo hidden-sm-down">
-                    <h1><a href="index.html">RevenueSure Broker</a></h1>
+                    <h1><a href="index.html">ReconMate</a></h1>
                 </div>
 
                 <form class="search d-none">
@@ -110,49 +112,97 @@
                     </ul>
                 </div>
             </aside>
+			
+			<!--MODALS-->
+			<!--mpesa modal-->
+			<div class="modal" id="mpesa-modal" tabindex="-1" role="dialog">
+			  <div class="modal-dialog  modal-dialog-centered" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h3 class="modal-title">Upload Mpesa statement</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					 	<div class="col-12 p-0 request-container animated fadeIn">
+							 <form class="drop-section-container cursor-pointer" action="upload-results.html">
+								<input type="file"  name="file" id="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  class="dropify " data-show-loader="true" />
+								<div class="form-group pt-5 p-3 m-0">
+										<label for="inputGroupSelect04" class="text-capitalize font-weight-bold text-danger"><h5>select a paybil</h5></label>
+										<select class="custom-select form-control border text-capitalize" id="inputGroupSelect04">
+										  <option selected>-- Select paybil --</option>
+										  <option value="1">HQ Paybill</option>
+										  <option value="2">367776</option>
+										</select>
+									  </div>
+								<div class="form-group   p-3  m-0 ">
+									<button class="btn btn-primary text-capitalize w-100 text-center"><i class="zmdi zmdi-upload mr-3"></i>upload statement</button>
+								</div>
+							</form>
+					  	</div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+			<!--mpesa modal-->
+			
+			<!--bank modal-->
+			<div class="modal" id="bank-modal" tabindex="-1" role="dialog">
+			  <div class="modal-dialog  modal-dialog-centered" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h3 class="modal-title">Upload Bank statement</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					 	<div class="col-12 p-0 request-container animated fadeIn">
+							 <form class="drop-section-container cursor-pointer" action="upload-bank.html">
+								<input type="file"  name="file" id="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"  class="dropify " data-show-loader="true" />
+
+								<div class="form-group   p-3  m-0 ">
+									<button class="btn btn-primary text-capitalize w-100 text-center"><i class="zmdi zmdi-upload mr-3"></i>upload statement</button>
+								</div>
+							</form>
+					  	</div>
+				  </div>
+				  
+				</div>
+			  </div>
+			</div>
+			<!--bank modal-->
+			<!--MODALS-->
 
             
 
             <section class="content">
                 <header class="content__title px-0 border-0">
-                  	 <span class="rev-title-container">
-						 <h1 class="text-capitalize stream_name m-0">All revenue streams</h1>
-						 <div class="actions text-black">
-                        <a href="#" class="actions__item zmdi zmdi-trending-up d-none"></a>
-                        <a href="#" class="actions__item zmdi zmdi-check-all d-none"></a>
-
-                        <div class="dropdown actions__item" title="choose another revenue stream">
-                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#" class="dropdown-item">All revenue streams</a>
-                                <a href="#" class="dropdown-item">SBP (Business)</a>
-                                <a href="#" class="dropdown-item">Land rates</a>
-                                <a href="#" class="dropdown-item">House Rents</a>
-                                <a href="#" class="dropdown-item">Plans & approvals</a>
-                                <a href="#" class="dropdown-item">Betting & Advertisments</a>
-								
-								
-                            </div>
-                        </div>
-                    </div>
-						 
-					</span>
-                    <small>Showing revenue collection summery for <strong class="stream_name">all revenue streams</strong></small>
-
-                    
-                </header>
-
-                <div class="row quick-stats">
+				 	<div class="row">
+						<div class="col-md-7 col-sm-12">
+							<span class="rev-title-container">
+							 <h1 class="text-capitalize stream_name m-0">Revenue collections</h1>
+							</span>
+							<small>Revenue collections for all revenue streams</small>
+							
+						</div>
+						<div class="col-md-5 col-sm-12">
+							<div class="section-header">
+								<a href="#" class="btn btn btn-primary" title="Upload Mpesa statements"  data-toggle="modal" data-target="#mpesa-modal">Upload mpesa statement</a>
+								<a href="#" class="btn btn btn-secondary ml-3" title="Upload Bank statements" data-toggle="modal" data-target="#bank-modal">Upload bank statement</a>
+							</div>
+							
+						</div>						
+					</div>
+				</header>
+				<div class="row quick-stats text-uppercase">
                     <div class="col-sm-6 col-md-3">
                         <div class="quick-stats__item bg-primary-green bg-pattern">
                             <div class="quick-stats__info">
-								<h3 class="">Daily <i class="zmdi zmdi-caret-down"></i>
-								<input type="text" class="form-control date-picker hidden-sm-down" id="daily_date" placeholder="Pick a date">
-								</h3>
-								<h4 class="the_day">3rd March 2020</h4>
-                                <h2>356,785K</h2>
-                                <small>Total collections in KES</small>
-								<strong>32 transactions</strong>
+                                <h2>987,459</h2>
+                                <small class="text-capitalize">Year to date (YTD)</small>
                             </div>
                         </div>
                     </div>
@@ -160,11 +210,8 @@
                     <div class="col-sm-6 col-md-3">
                         <div class="quick-stats__item bg-secondary-green bg-pattern">
                             <div class="quick-stats__info">
-								<h3>Weekly  <i class="zmdi zmdi-caret-down"></i></h3>
-								<h4 class="the_week">1-Jan-20 To 7-Jan-20</h4>
                                 <h2>356,785K</h2>
-                                <small>Total collections in KES</small>
-								<strong>32 transactions</strong>
+                                <small class="text-capitalize">month to date (MTD)</small>
                             </div>
                         </div>
                     </div>
@@ -172,11 +219,8 @@
                     <div class="col-sm-6 col-md-3">
                         <div class="quick-stats__item bg-primary-green bg-pattern">
                             <div class="quick-stats__info">
-								<h3>Monthly <i class="zmdi zmdi-caret-down"></i></h3>
-								<h4 class="the_month">March 2020</h4>
                                 <h2>58,778</h2>
-                                <small>Total collections in KES</small>
-								<strong>32 transactions</strong>
+                                <small class="text-capitalize">week to date (WTD)</small>
                             </div>
                         </div>
                     </div>
@@ -184,15 +228,12 @@
                     <div class="col-sm-6 col-md-3">
                         <div class="quick-stats__item bg-secondary-green bg-pattern">
                             <div class="quick-stats__info">
-								<h3>Financial year <i class="zmdi zmdi-caret-down"></i></h3>
-								<h4 class="the_financial_year">2019/2020</h4>
-                                <h2>2114</h2>
-                                <small>Total collections in KES</small>
-								<strong>32 transactions</strong>
+                                <h2>214</h2>
+                                <small class="capitalize">yesterday</small>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>                
 
                 <div class="row">
                     <div class="col-md-12">
@@ -208,11 +249,98 @@
                     </div>
                     
                 </div>
+				<div class="row">
+                    <!-- cash position -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title text-capitalize">Cash position</h2>
+                            </div>
+
+                            <div class="listview listview--hover">
+                                <a class="listview__item">
+                                    <img class="listview__img" src="demo/img/cash-banks/nbk.jpg">
+                                    <div class="widget-past-days__info text-dark">
+                                        <small class="text-gray">NBK balance</small>
+                                        <h3 class="text-black">KES 3,473,855,329.25</h3>
+                                    </div>
+                                </a>
+
+                                <a class="listview__item">
+                                    <img class="listview__img" src="demo/img/cash-banks/bank.jpg">
+									<div class="widget-past-days__info text-dark">
+                                        <small class="text-gray">Other Bank Balances</small>
+                                        <h3 class="text-black">KES 0.00</h3>
+                                    </div>
+                                </a>
+
+                                <a class="listview__item">
+                                    <img class="listview__img" src="demo/img/cash-banks/map-c088f5e171feee1eb76727a0460e03ed004adbddd02083d3126c5dd956191006.png">
+                                    <div class="widget-past-days__info text-dark">
+                                        <small class="text-gray">Swept to CRF</small>
+                                        <h3 class="text-black">KES 3,024,678,820.00</h3>
+                                    </div>
+                                </a>
+
+                                <a class="listview__item">
+                                    <img class="listview__img" src="demo/img/cash-banks/cash-position.jpg">
+                                    <div class="widget-past-days__info text-dark">
+                                        <small class="text-gray">Current Cash Position without Debits</small>
+                                        <h3 class="text-black">KES 449,176,509.25</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                   <!-- payment modes  -->
+                   <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2 class="card-title text-capitalize">Payment Modes</h2>
+                        </div>
+
+                        <div class="listview listview--hover">
+                            <a class="listview__item">
+                                <img class="listview__img" src="demo/img/cash-banks/mobile-money-c39bcbf741816fb9d3f007a40e23d7da6da7edf8acba5649d3ee3b8d9e68406a.png">
+                                <div class="widget-past-days__info text-dark">
+                                    <small class="text-gray">Mpesa</small>
+                                    <h3 class="text-black">KES 994,004,715.00</h3>
+                                </div>
+                            </a>
+
+                            <a class="listview__item">
+                                <img class="listview__img" src="demo/img/cash-banks/cash-deposit.jpg">
+                                <div class="widget-past-days__info text-dark">
+                                    <small class="text-gray text-capitalize">Cash</small>
+                                    <h3 class="text-black">KES 1,299,532,261.25</h3>
+                                </div>
+                            </a>
+
+                            <a class="listview__item">
+                                <img class="listview__img" src="demo/img/cash-banks/cheque.jpg">
+                                <div class="widget-past-days__info text-dark">
+                                    <small class="text-gray">Non Cash</small>
+                                    <h3 class="text-black">KES 972,551,612.00</h3>
+                                </div>
+                            </a>
+
+                            <a class="listview__item">
+                            <img class="listview__img" src="demo/img/cash-banks/total-470a684755f7a23a51f88d890437f35ec6503604efbf085c7aae9ea5e66a0e41.png">
+                            <div class="widget-past-days__info text-dark">
+                                <small class="text-gray">Total</small>
+                                <h3 class="text-black">KES 3,473,855,329.25</h3>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
 
                 
 
                 <footer class="footer hidden-xs-down">
-                    <p>RevenueSure Broker.</p>
+                    <p>ReconMate</p>
                 </footer>
             </section>
         </main>
@@ -273,7 +401,7 @@
 		
 		 <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
         <script src="vendors/select2/js/select2.full.min.js"></script>
-        <script src="vendors/dropzone/dropzone.min.js"></script>
+<!--        <script src="vendors/dropzone/dropzone.min.js"></script>-->
         <script src="vendors/moment/moment.min.js"></script>
         <script src="vendors/nouislider/nouislider.min.js"></script>
         <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
@@ -302,6 +430,10 @@
         <!-- App functions and actions -->
         <script src="js/app.min.js"></script>
         <script src="js/main.js"></script>
+		<script src="js/dropify2.js"></script>
+		<script>
+			$('.dropify').dropify();
+		</script>
 		
 		<!--chart data scripts-->
 		
