@@ -13783,3 +13783,32 @@ header .section-header {
 .header-logo{
 	height: 52px;
 }
+.ranger-container ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.ranger-container :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.ranger-container ::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+strong{
+	font-weight: 800 !important;
+}
+.upload-btns{
+	display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+	padding-top: 15px;
+}
+@media screen and (max-width: 780px) {
+  .upload-btns{
+	display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+	padding-top: 15px;
+}
+}

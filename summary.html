@@ -104,15 +104,33 @@
 				 	<div class="row">
 						<div class="col-md-12 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Revenue collected via the Bank for 30 April 2020</h1>
+							 <h1 class="text-capitalize stream_name m-0">Summary report for 29-April, 2020 </h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
 									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active">Bank upload results</li>
+									<li class="breadcrumb-item active">Summary Report</li>
 								</ol>
 							</div>
+							
 						</div>
+						
+						<div class="col-md-6 col-sm-12">
+							<p><strong>NOTE</strong> For a single date, kindly <strong>double click</strong> on the same date</p>
+							<div class="ranger-container">
+								<i class="icon-calendar-7"></i>
+								<input type="text" class="form-control date-range  table-ranger" id="date_ranger" placeholder="Select a date or date range" readonly="readonly"  onChange=" Expand(obj)" >
+							</div>
+						</div>
+						
+						<div class="col-md-6 col-sm-12 upload-btns">
+							<div class="section-header">
+								<a href="#" class="btn btn btn-primary" title="Upload Mpesa statements"  data-toggle="modal" data-target="#mpesa-modal">Upload mpesa statement</a>
+								<a href="#" class="btn btn btn-secondary ml-3" title="Upload Bank statements" data-toggle="modal" data-target="#bank-modal">Upload bank statement</a>
+							</div>
+							
+						</div>
+						
 											
 					</div>
 				</header>
