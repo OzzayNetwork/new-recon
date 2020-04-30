@@ -13775,3 +13775,11 @@ header .section-header {
     width: 90px;
     flex-flow: row;
 }
+.modal-logo{
+	height: 45px;
+    margin-bottom: 1.5rem;
+	margin-top: 0.5rem;
+}
+.header-logo{
+	height: 52px;
+}
