@@ -73,6 +73,34 @@
 
                 
             </header>
+
+            <aside class="sidebar">
+                <div class="scrollbar-inner">
+                    <div class="user">
+                        <div class="user__info" data-toggle="dropdown">
+                            <img class="user__img" src="demo/img/county.png" alt="">
+                            <div>
+                                <div class="user__name">Malinda Hollaway</div>
+                                <div class="user__email">malinda-h@gmail.com</div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">View Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="landing-page.html">Logout</a>
+                        </div>
+                    </div>
+
+                     <ul class="navigation">
+                        <li class="navigation__active"><a href="index.html"><i class="zmdi zmdi-view-dashboard"></i>Home</a></li>
+                        <li class="navigation__active"><a href="summary.html"><i class="zmdi zmdi-assignment-check"></i>Summary report</a></li>
+                        <li class="navigation__active"><a href="detailed.html"><i class="zmdi zmdi-assignment"></i>Detailed report</a></li>
+						<li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
+                    </ul>
+                </div>
+            </aside>
+			
 			<!--MODALS-->
 			<!--mpesa modal-->
 			<div class="modal" id="mpesa-modal" tabindex="-1" role="dialog">
@@ -140,33 +168,6 @@
 			<!--bank modal-->
 			<!--MODALS-->
 
-            <aside class="sidebar">
-                <div class="scrollbar-inner">
-                    <div class="user">
-                        <div class="user__info" data-toggle="dropdown">
-                            <img class="user__img" src="demo/img/county.png" alt="">
-                            <div>
-                                <div class="user__name">Malinda Hollaway</div>
-                                <div class="user__email">malinda-h@gmail.com</div>
-                            </div>
-                        </div>
-
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">View Profile</a>
-                            <a class="dropdown-item" href="#">Settings</a>
-                            <a class="dropdown-item" href="landing-page.html">Logout</a>
-                        </div>
-                    </div>
-
-                     <ul class="navigation">
-                        <li class="navigation__active"><a href="index.html"><i class="zmdi zmdi-view-dashboard"></i>Home</a></li>
-                        <li class="navigation__active"><a href="summary.html"><i class="zmdi zmdi-assignment-check"></i>Summary report</a></li>
-                        <li class="navigation__active"><a href="detailed.html"><i class="zmdi zmdi-assignment"></i>Detailed report</a></li>
-						<li class="navigation__active mt-4"><a href="landing-page.html"><i class="zmdi zmdi-power"></i>Logout</a></li>
-                    </ul>
-                </div>
-            </aside>
-
             
 
             <section class="content">
@@ -174,12 +175,12 @@
 				 	<div class="row">
 						<div class="col-md-12 col-sm-12">
 							<span class="rev-title-container">
-							 <h1 class="text-capitalize stream_name m-0">Summary report for 29-April, 2020 </h1>
+							 <h1 class="text-capitalize stream_name m-0">Uploaded files</h1>
 							</span>
 							<div class="">
 								<ol class="breadcrumb border-0">
 									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-									<li class="breadcrumb-item active">Summary Report</li>
+									<li class="breadcrumb-item active">Uploaded files</li>
 								</ol>
 							</div>
 							
@@ -211,55 +212,77 @@
 					
                     <div class="card-body">                       
                         <div class="table-responsive">
-                            <table id="data-sum" class="table table-striped table-hover results">
-                                <thead class="thead-default">
-                                    <tr class="text-capitalize">
-                                        <th>Revenue stream</th>
-                                        <th>Amount</th>
-                                    </tr>
-                                </thead>
-                                <tfoot>
-                                    <tr>
-                                        <th class="text-uppercase">Total</th>
-										<th>12,400,633.00 </th>
-                                    </tr>
-                                </tfoot>
-                                <tbody>
+                            <table id="data-table" class="table table-striped mb-0">
+								<thead>
+								<tr>
+									<th>#</th>
+									<th>File Name</th>
+									<th>records</th>
+									<th>Reconciled</th>
+									<th>Unreconciled</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
 									<tr>
-										<td> Parking Fees </td>
-										<td> 5,727,000.00  </td>
-									</tr>
-									
+									<th scope="row">4</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
 									<tr>
-										<td>  Land Rates </td>
-										<td>   495,972.00   </td>
-									</tr>
-									
+									<th scope="row">5</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
 									<tr>
-										<td>  Single Business Permits </td>
-										<td>    27,250.00    </td>
-									</tr>
-									
+									<th scope="row">6</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
 									<tr>
-										<td>   Billboards and Advertisements </td>
-										<td>    3,918,306.00     </td>
-									</tr>
-									
+									<th scope="row">7</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
 									<tr>
-										<td>    Fire Inspection Certificates </td>
-										<td>      34,000.00      </td>
+									<th scope="row">8</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
 									</tr>
-									
-									<tr>
-										<td>    Plans and Inspections </td>
-										<td>        291,915.00      </td>
-									</tr>
-									<tr>
-										<td>    Other incomes  </td>
-										<td>      1,906,190.00 </td>
-									</tr>
+
 								</tbody>
-                            </table>
+							</table>
                         </div>
                     </div>
                 </div><footer class="footer hidden-xs-down">

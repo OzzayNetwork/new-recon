@@ -59,6 +59,10 @@
                         <i class="zmdi zmdi-search search__helper" data-ma-action="search-close"></i>
                     </div>
                 </form>
+				
+				<ul class="top-nav">
+                    <li class="">May 6 2020</li>
+                </ul>
 
                 
             </header>
@@ -171,155 +175,187 @@
 						</div>
 						<div class="col-md-5 col-sm-12">
 							<div class="section-header">
-								<a href="#" class="btn btn btn-primary" title="Upload Mpesa statements"  data-toggle="modal" data-target="#mpesa-modal">Upload mpesa statement</a>
-								<a href="#" class="btn btn btn-secondary ml-3" title="Upload Bank statements" data-toggle="modal" data-target="#bank-modal">Upload bank statement</a>
+								<a href="#" class="btn btn btn-primary btn-lg" title="Upload Mpesa statements"  data-toggle="modal" data-target="#mpesa-modal">Upload mpesa statement</a>
+								<a href="#" class="btn btn btn-secondary ml-3 btn-lg" title="Upload Bank statements" data-toggle="modal" data-target="#bank-modal">Upload bank statement</a>
 							</div>
 							
 						</div>						
 					</div>
 				</header>
 				<div class="row quick-stats text-uppercase">
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-6 col-md-6">
                         <div class="quick-stats__item bg-primary-green bg-pattern">
+							<div class="avatar-char"><i class="zmdi zmdi-assignment-check"></i></div>
                             <div class="quick-stats__info">
-                                <h2>987,459</h2>
-                                <small class="text-capitalize">Year to date (YTD)</small>
+								<small class="text-capitalize mb-3">Number of reports done</small>
+                                <h2>120 Reports</h2>
+                                
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3">
+                    <div class="col-sm-6 col-md-6">
                         <div class="quick-stats__item bg-secondary-green bg-pattern">
+							<div class="avatar-char"><i class="zmdi zmdi-flag"></i></div>
                             <div class="quick-stats__info">
-                                <h2>356,785K</h2>
-                                <small class="text-capitalize">month to date (MTD)</small>
+                                <small class="text-capitalize mb-3">Unreconciled transactions</small>
+                                <h2>KES 356,785</h2>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3">
-                        <div class="quick-stats__item bg-primary-green bg-pattern">
-                            <div class="quick-stats__info">
-                                <h2>58,778</h2>
-                                <small class="text-capitalize">week to date (WTD)</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3">
-                        <div class="quick-stats__item bg-secondary-green bg-pattern">
-                            <div class="quick-stats__info">
-                                <h2>214</h2>
-                                <small class="capitalize">yesterday</small>
-                            </div>
-                        </div>
-                    </div>
                 </div>                
 
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Revenue collection Statistics</h4>
-                                <h6 class="card-subtitle">Statistical revenue collection overview for <span class="bar-date">2019/2020</span> </h6>
+                    <div class="col-md-5 col-sm-12">
+						<div class="row">
+							<div class="col-12">
+							<div class="card widget-visitors">
+                       	 <div class="card-body">
+                            <h3 class="card-title">Last Reconciliation</h3>
+                            <h6 class="card-subtitle">The last reconciliation was done on <strong>May 1st 2020</strong></h6>
+								<div class="tot-breakdown">
+									<div class="last-tot">
+											<small>Total Amount collected</small>
+											<strong>KES 20,336,589,568</strong>
+										</div>
 
-                                <div id="revenue-chart-data"></div>
-                                <div class="flot-chart-legends flot-chart-legends--curved"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
+										<div class="widget-visitors__stats">
+											<div>
+												<small class="mb-2">Amount reconciled</small>
+												<strong>KES 17,080,333,354‬</strong>
+											</div>
+											<div>
+												<small class="mb-2">Amount unreconciled</small>
+												<strong>KES 3,256,256,214</strong>
+											</div>
+										</div>
+								</div>
+							</div>
+               		 	</div>
+						</div>
+							<div class="col-12">
+									<div class="card card--inverse widget-past-days">
+									<div class="card-body">
+										<h4 class="card-title">1st May 2020</h4>
+										<h6 class="card-subtitle">Unreconciled and unclaimed Transactions for the previous reconsiliations</h6>
+									</div>
+									<div class="listview listview--inverse listview--striped">
+										<div class="listview__item">
+											<div class="widget-past-days__info">
+												<small>Unreconciled</small>
+												<h3>47,896,536</h3>
+											</div>
+
+											<div class="widget-past-days__chart hidden-sm">
+												<div class="sparkline-bar-stats"><canvas width="88" height="36" style="display: inline-block; width: 88px; height: 36px; vertical-align: top;"></canvas></div>
+											</div>
+										</div>
+
+										<div class="listview__item">
+											<div class="widget-past-days__info">
+												<small>Unclaimed</small>
+												<h3>24,456,799</h3>
+											</div>
+
+											<div class="widget-past-days__chart hidden-sm">
+												<div class="sparkline-bar-stats"><canvas width="88" height="36" style="display: inline-block; width: 88px; height: 36px; vertical-align: top;"></canvas></div>
+											</div>
+										</div>
+
+									</div>
+								
+							</div>
+					</div>
+				</div>
+					</div>
+					
+					<div class="col-md-7 col-sm-12">
+						<div class="card card-table">
+							<div class="card-header">
+								  <h4 class="card-title">Most recent reconciliations</h4>
+                       			 <h6 class="card-subtitle">Below is a table for the most recent uploaded files for reconciliations</h6>
+
+							</div>
+						<div class="card-body">
+
+							<table class="table table-striped mb-0">
+								<thead>
+								<tr>
+									<th>#</th>
+									<th>File Name</th>
+									<th>records</th>
+									<th>Reconciled</th>
+									<th>Unreconciled</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+									<tr>
+									<th scope="row">4</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+									<tr>
+									<th scope="row">5</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+									<tr>
+									<th scope="row">6</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+									<tr>
+									<th scope="row">7</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+									<tr>
+									<th scope="row">8</th>
+									<td>file name goes here</td>
+									<td>23</td>
+									<td>KES 254,256</td>
+									<td>KES 25,232</td>
+								</tr>
+									</tr>
+
+								</tbody>
+							</table>
+							<a href="uploaded-files.html" class="view-more">View More</a>
+						</div>
                 </div>
-				<div class="row">
-                    <!-- cash position -->
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2 class="card-title text-capitalize">Cash position</h2>
-                            </div>
-
-                            <div class="listview listview--hover">
-                                <a class="listview__item">
-                                    <img class="listview__img" src="demo/img/cash-banks/nbk.jpg">
-                                    <div class="widget-past-days__info text-dark">
-                                        <small class="text-gray">NBK balance</small>
-                                        <h3 class="text-black">KES 3,473,855,329.25</h3>
-                                    </div>
-                                </a>
-
-                                <a class="listview__item">
-                                    <img class="listview__img" src="demo/img/cash-banks/bank.jpg">
-									<div class="widget-past-days__info text-dark">
-                                        <small class="text-gray">Other Bank Balances</small>
-                                        <h3 class="text-black">KES 0.00</h3>
-                                    </div>
-                                </a>
-
-                                <a class="listview__item">
-                                    <img class="listview__img" src="demo/img/cash-banks/map-c088f5e171feee1eb76727a0460e03ed004adbddd02083d3126c5dd956191006.png">
-                                    <div class="widget-past-days__info text-dark">
-                                        <small class="text-gray">Swept to CRF</small>
-                                        <h3 class="text-black">KES 3,024,678,820.00</h3>
-                                    </div>
-                                </a>
-
-                                <a class="listview__item">
-                                    <img class="listview__img" src="demo/img/cash-banks/cash-position.jpg">
-                                    <div class="widget-past-days__info text-dark">
-                                        <small class="text-gray">Current Cash Position without Debits</small>
-                                        <h3 class="text-black">KES 449,176,509.25</h3>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                   <!-- payment modes  -->
-                   <div class="col-md-6 col-sm-12">
-                    <div class="card">
-                        <div class="card-body">
-                          <h2 class="card-title text-capitalize">Payment Modes</h2>
-                        </div>
-
-                        <div class="listview listview--hover">
-                            <a class="listview__item">
-                                <img class="listview__img" src="demo/img/cash-banks/mobile-money-c39bcbf741816fb9d3f007a40e23d7da6da7edf8acba5649d3ee3b8d9e68406a.png">
-                                <div class="widget-past-days__info text-dark">
-                                    <small class="text-gray">Mpesa</small>
-                                    <h3 class="text-black">KES 994,004,715.00</h3>
-                                </div>
-                            </a>
-
-                            <a class="listview__item">
-                                <img class="listview__img" src="demo/img/cash-banks/cash-deposit.jpg">
-                                <div class="widget-past-days__info text-dark">
-                                    <small class="text-gray text-capitalize">Cash</small>
-                                    <h3 class="text-black">KES 1,299,532,261.25</h3>
-                                </div>
-                            </a>
-
-                            <a class="listview__item">
-                                <img class="listview__img" src="demo/img/cash-banks/cheque.jpg">
-                                <div class="widget-past-days__info text-dark">
-                                    <small class="text-gray">Non Cash</small>
-                                    <h3 class="text-black">KES 972,551,612.00</h3>
-                                </div>
-                            </a>
-
-                            <a class="listview__item">
-                            <img class="listview__img" src="demo/img/cash-banks/total-470a684755f7a23a51f88d890437f35ec6503604efbf085c7aae9ea5e66a0e41.png">
-                            <div class="widget-past-days__info text-dark">
-                                <small class="text-gray">Total</small>
-                                <h3 class="text-black">KES 3,473,855,329.25</h3>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                
-
+					
+					</div>
+				</div>
                 <footer class="footer hidden-xs-down">
                     <p>ReconMate</p>
                 </footer>
